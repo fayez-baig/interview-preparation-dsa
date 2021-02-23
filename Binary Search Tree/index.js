@@ -69,3 +69,5 @@ console.log("MAX:" + bst.getMaxVal());
 // function log(node) {
 //   console.log(node.value);
 // }
+
+//Big O notation of the above program has O(log n)  (Logarithmic time complexity)
