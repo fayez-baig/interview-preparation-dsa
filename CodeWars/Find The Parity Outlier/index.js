@@ -13,15 +13,9 @@ function findOutlier(integers) {
 }
 
 const isArrEvenOrOdd = (subArr) => {
-  let evenCount = 0;
-  let oddCount = 0;
-  for (let i of subArr) {
-    if (i % 2 === 0) {
-      evenCount++;
-    } else {
-      oddCount++;
-    }
-  }
+  let evenCount = 0,
+    oddCount = 0;
+  for (let i of subArr) i % 2 === 0 ? evenCount++ : oddCount++;
   return evenCount === 1 || evenCount === 0 ? true : false;
 };
 
