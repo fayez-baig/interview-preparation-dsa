@@ -1,3 +1,9 @@
+/*
+Input:- [12, 3, 1, 2, -6, 5, -8, 6], 0
+Output:- [12, 3, 1, 2, -6, 5, -8, 6], 0
+
+*/
+
 function threeSum(array, target) {
   array.sort((a, b) => a - b);
   let newArr = [];
@@ -22,3 +28,5 @@ function threeSum(array, target) {
 }
 
 console.log(threeSum([12, 3, 1, 2, -6, 5, -8, 6], 0));
+
+//  O(n^2) time | O(n) space
