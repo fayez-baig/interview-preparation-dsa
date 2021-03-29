@@ -79,3 +79,12 @@ console.log(
     [10, 8, -12],
   ])
 );
+
+// Explanation:-
+//        0       1        2
+//  0 | i0 j0 | i0 j1 | i0 j2 |
+//  1 | i1 j0 | i1 j1 | i1 j2 |
+//  2 | i2 j0 | i2 j1 | i2 j2 |
+
+// left sum = i0j0 + i1j1 + i2j2
+// right right = i0j2 + i1j1 + i2j2
