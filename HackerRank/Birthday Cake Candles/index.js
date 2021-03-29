@@ -42,4 +42,18 @@ function birthdayCakeCandles(candles) {
   return count;
 }
 
+// OR
+
+function birthdayCakeCandles(candles) {
+  let maxNum = 0;
+  let count = 0;
+  for (let i = 0; i < candles.length; i++) {
+    if (maxNum < candles[i]) maxNum = candles[i];
+  }
+  for (let i = 0; i < candles.length; i++) {
+    if (maxNum === candles[i]) count++;
+  }
+
+  return count;
+}
 console.log(birthdayCakeCandles([3, 2, 1, 3]));
