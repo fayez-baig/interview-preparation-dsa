@@ -21,4 +21,21 @@ dropElements([1, 2, 3, 4], function (n) {
   return n >= 3;
 });
 
+
+// Method 2
+
+function dropElements(arr, func) {
+  for(let i = 0; i < arr.length; i++){
+    if(func(arr[i])){
+     return arr
+    }else{
+      arr.splice(i,1)
+      i--; 
+    }
+  }
+  return []
+}
+
+
+
 //Big O notation of the above program has O(n)  (Linear time complexity)
